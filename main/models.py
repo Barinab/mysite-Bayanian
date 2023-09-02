@@ -24,3 +24,10 @@ class Pro(models.Model):
     Pro_Subject=models.CharField(max_length=200)
     Pro_des=models.CharField(max_length=600)
 
+class Service(models.Model):    
+    Service_name=models.CharField(max_length=30)
+    Service_Coname=models.CharField(max_length=30)
+    Service_date=models.CharField(max_length=30)
+    Service_Subject=models.CharField(max_length=200)
+    Service_des=models.CharField(max_length=600)
+
