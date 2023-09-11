@@ -1,1 +1,11 @@
-<p> home </p>
+<ul>
+        {% for edu  in edus%}
+        <li>
+            <h2>{{edu.Edu_nameUni}}</h2>
+               <p>  {{edu.Edu_majarName}}</p>
+            {{edu.Edu_datestart}}-{{edu.Edu_datefinish}}
+            <h3>{{edu.Edu_des}}</h3>
+          
+        </li>
+        {% endfor %}
+</ul>
