@@ -24,7 +24,8 @@ urlpatterns = [
     path('main/', include('main.urls')),
     path('',include('main.urls')),
     path('',include('nazar.urls')),
-    
+    path('',include('subscribe.urls')),
+
     
 
 ]

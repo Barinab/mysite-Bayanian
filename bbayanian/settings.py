@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'nazar.apps.NazarConfig',
+    'subscribe.apps.SubscribeConfig',
 ]
 
 MIDDLEWARE = [
