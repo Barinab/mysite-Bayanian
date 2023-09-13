@@ -15,6 +15,16 @@ def subscribe(request):
         subscribe_form=SubscribeFrom(request.POST)
         if subscribe_form.is_valid():
             print("valid")
+            
+            email=subscribe_form.cleaned_data["email"]
+            firstName=subscribe_form.cleaned_data["first_name"]
+            lastname=subscribe_form.cleaned_data["last_name"]
+            matn_email=subscribe_form.cleaned_data["matn"]
+            subscribe=Subscribe(first_name=firstName,last_name=lastname,email=email,matn=matn_email)
+            subscribe.save()
+            context={}
+            return render(request,"subscribe/tanx.html",context)
+
 
         print("post")
         
